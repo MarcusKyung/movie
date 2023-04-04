@@ -16,31 +16,38 @@
       <div class="row">
         <div class="col-md-6">
           <hr>
-          <h2>Add a Contact:</h2>
+          <h2>Movie Options:</h2>
           <form id="new-contact">
             <div class="form-group">
               <label for="movie-selection">Choose A Movie:</label>
                 <select name="movie-selection" id="movie-selection">
                   <option value="new-release" id="new-release" name="movie-selection">New Release</option>
-                  <option value="old-movie" id="movie-selection" name="movie-selection">Old Movie</option>
+                  <option value="old-movie" id="old-movie" name="movie-selection">Old Movie</option>
                 </select>
             </div>
             <div class="form-group">
-              <label for="new-last-name">Last Name</label>
-              <input type="text"  class="form-control" id="new-last-name" name="new-last-name">
+              <label for="showtime">Showtime:</label>
+                <select name="showtime" id="showtime">
+                  <option value="matinee" id="matinee-showing" name="showtime">Matinee Showing</option>
+                  <option value="day" id="day-showing" name="showtime">Day Showing</option>
+                </select>
             </div>
             <div class="form-group">
-              <label for="new-phone-number">Phone Number</label>
-              <input type="text"  class="form-control" id="new-phone-number" name="new-phone-number">
+              <label for="age-selection">Age:</label>
+                <select name="age-selection" id="age-selection">
+                  <option value="child-ticket" id="child-ticket" name="child-ticket">Child</option>
+                  <option value="adult-ticket" id="adult-ticket" name="adult-ticket">Adult</option>
+                  <option value="senior-ticket" id="senior-ticket" name="senior-ticket">Senior</option>                  
+                </select>
             </div>
-            <button type="submit" class="btn-primary">Add</button>
+            <button type="submit" class="btn-primary">Get Price</button>
           </form>
           <hr>
-          <h2>Contacts:</h2>
-          <div id="contacts">
+          <h2>Prices:</h2>
+          <div id="ticket-price">
           </div>
         </div>
-        <div class="col-md-6">
+        <!-- <div class="col-md-6">
           <div id="contact-details" class="hidden">
             <h2>Contact Details:</h2>
             <p>First Name: <span class="first-name"></span></p>
@@ -50,7 +57,7 @@
             <p>Mailing Address: <span class="mailing-address"></span></p>
             <button class="btn-primary delete" type="button">Delete</button>
           </div>
-        </div>
+        </div> -->       
       </div>
     </div>
   </body>
