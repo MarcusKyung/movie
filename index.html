@@ -8,7 +8,7 @@
       crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
-    <title>Address Book</title>
+    <title>Ticket</title>
   </head>
   <body>
     <div class="container">
@@ -17,33 +17,32 @@
         <div class="col-md-6">
           <hr>
           <h2>Movie Options:</h2>
-          <form id="new-contact">
+          <form id="movie-options">
             <div class="form-group">
-              <label for="movie-selection">Choose A Movie:</label>
-                <select name="movie-selection" id="movie-selection">
-                  <option value="new-release" id="new-release" name="movie-selection">New Release</option>
-                  <option value="old-movie" id="old-movie" name="movie-selection">Old Movie</option>
+              <label for="movie-selection">Movie Selection:</label>
+                <select name="showtimes" id="showtimes">
+                  <option value="old-movie" id="matinee-showing" name="showtimes">Matinee Showing</option>
+                  <option value="new-release" id="day-showing" name="showtimes">Day Showing</option>
                 </select>
             </div>
             <div class="form-group">
-              <label for="showtime">Showtime:</label>
-                <select name="showtime" id="showtime">
-                  <option value="matinee" id="matinee-showing" name="showtime">Matinee Showing</option>
-                  <option value="day" id="day-showing" name="showtime">Day Showing</option>
+              <label for="showtimes">Showtime:</label>
+                <select name="showtimes" id="showtimes">
+                  <option value="matinee" id="matinee-showing" name="showtimes">Matinee Showing</option>
+                  <option value="day" id="day-showing" name="showtimes">Day Showing</option>
                 </select>
             </div>
             <div class="form-group">
-              <label for="age-selection">Age:</label>
-                <select name="age-selection" id="age-selection">
-                  <option value="child-ticket" id="child-ticket" name="child-ticket">Child</option>
-                  <option value="adult-ticket" id="adult-ticket" name="adult-ticket">Adult</option>
-                  <option value="senior-ticket" id="senior-ticket" name="senior-ticket">Senior</option>                  
+              <label for="age-group">Age:</label>
+                <select name="showtimes" id="showtimes">
+                  <option value="matinee" id="matinee-showing" name="showtimes">Matinee Showing</option>
+                  <option value="day" id="day-showing" name="showtimes">Day Showing</option>
                 </select>
             </div>
             <button type="submit" class="btn-primary">Get Price</button>
           </form>
           <hr>
-          <h2>Prices:</h2>
+          <h2>Price:</h2>
           <div id="ticket-price">
           </div>
         </div>
